@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#546e7a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/photo_background"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo_camera_outline"
+            android:layout_gravity="center"
+
+           />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Photo"
+android:layout_gravity="center"
+                android:gravity="center"
+                />
+    </LinearLayout>
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:hint="Email address:"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:drawableLeft="@drawable/ic_envelope"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+android:textColorHint="#fafafa"
+            android:drawablePadding="12dp"
+
+            />
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password:"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:drawableLeft="@drawable/ic_padlock"
+android:textColorHint="#fafafa"
+            android:drawablePadding="12dp"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authenticate"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="#84ffff"
+            android:textColor="#fafafa"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="By registering, I accept the"
+            android:layout_marginTop="64dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
